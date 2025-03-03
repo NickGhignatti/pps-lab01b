@@ -2,10 +2,10 @@ package e1;
 
 public class SilverBankAccount implements BankAccount{
     private final int FEE = 1;
-    private final CoreBankAccount base;
+    private final BankAccount base;
 
-    public SilverBankAccount() {
-        this.base = new CoreBankAccount();
+    public SilverBankAccount(BankAccount baseBankAccount) {
+        this.base = baseBankAccount;
     }
 
     public int getBalance() {
