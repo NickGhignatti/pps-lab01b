@@ -33,7 +33,7 @@ public class GoldBankAccountTest {
     }
 
     @Test
-    public void testCannotWithdrawMoreThanAvailable(){
+    public void testCanWithdrawMoreThanAvailable(){
         this.account.deposit(1000);
         this.account.withdraw(1200);
         assertEquals(-200, this.account.getBalance());
